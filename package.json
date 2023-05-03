@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "test": "jest",
+    "testExp": "NODE_OPTIONS=--experimental-vm-modules jest",
     "build": "tsc -p tsconfig.json"
   },
   "devDependencies": {
@@ -12,5 +13,8 @@
     "jest": "^28.1.3",
     "ts-jest": "^28.0.7",
     "typescript": "^4.3.0"
+  },
+  "dependencies": {
+    "image-type": "^5.2.0"
   }
 }

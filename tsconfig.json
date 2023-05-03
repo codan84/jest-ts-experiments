@@ -1,18 +1,14 @@
 {
   "compilerOptions": {
-    "target": "es2021",
+    "target": "ESNext",
     "moduleResolution": "NodeNext",
-    "module": "NodeNext",
+    "module": "ESNext",
     "esModuleInterop": true,
-    "resolveJsonModule": true,
     "strict": true,
-    "lib": ["es2021"],
     "rootDir": "./src",
     "baseUrl": "./src",
     "outDir": "./dist",
-    "skipLibCheck": true,
-    "strictNullChecks": true,
-    "noImplicitAny": false
+    "skipLibCheck": true
   },
-  "exclude": ["node_modules", "**/test/**"]
+  "exclude": ["node_modules"]
 }

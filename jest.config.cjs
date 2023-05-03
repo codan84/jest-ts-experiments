@@ -4,7 +4,7 @@ module.exports = {
     '^(\\.{1,2}/.*)\\.js$': '$1',
   },
   transform: {
-    '^.+\\.[tj]sx?$': [
+    '^.+\\.ts$': [
       'ts-jest',
       {
         useESM: true,
