@@ -1,13 +1,11 @@
-import { expect, jest, test, describe } from '@jest/globals'
+import test from 'ava'
 
 import { concat } from '../src/index.js'
 import { logStuff } from './helpers.js'
 
-describe('some test suite', () => {
-  test('some test', () => {
-    const res = logStuff(concat('some', 'stuff'))
-    // const res = concat('some', 'stuff')
+test('some test', async t => {
+  const res = logStuff(await concat('some', 'stuff'))
+  // const res = concat('some', 'stuff')
 
-    expect(res).toEqual('some not stuff')
-  })
+  t.is(res, 'some not stuff')
 })

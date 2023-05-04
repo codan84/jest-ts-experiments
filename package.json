@@ -4,16 +4,24 @@
   "main": "dist/index.js",
   "type": "module",
   "scripts": {
-    "test": "jest",
-    "testExp": "NODE_OPTIONS=--experimental-vm-modules jest",
+    "test": "ava test/**/*.test.ts",
     "build": "rm -rf dist && tsc"
   },
   "devDependencies": {
-    "@jest/globals": "^29.5.0",
     "@types/node": "^18.16.3",
+    "ava": "^5.2.0",
+    "ts-node": "^10.9.1",
     "typescript": "^4.3.0"
   },
   "dependencies": {
     "image-type": "^5.2.0"
+  },
+  "ava": {
+    "extensions": {
+      "ts": "module"
+    },
+    "nodeArguments": [
+      "--loader=ts-node/esm"
+    ]
   }
 }
