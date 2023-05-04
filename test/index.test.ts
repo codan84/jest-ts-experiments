@@ -5,7 +5,6 @@ import { logStuff } from './helpers.js'
 
 test('some test', async t => {
   const res = logStuff(await concat('some', 'stuff'))
-  // const res = concat('some', 'stuff')
 
   t.is(res, 'some not stuff')
 })

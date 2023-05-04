@@ -13,3 +13,5 @@
 .editorconfig
 node_modules
 .yarn/cache
+
+dist
