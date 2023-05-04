@@ -1,1 +1,4 @@
-export const iWantToBeMocked = () => 22
+export const iWantToBeMocked = () => {
+  console.log('actual invokation of iWantToBeMocked!')
+  return 22
+}
