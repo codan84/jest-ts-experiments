@@ -7,5 +7,6 @@ Working Ava (no testdouble): https://github.com/codan84/jest-ts-experiments/tree
 
 To run tests:
 ```
+yarn install
 NODE_OPTIONS="--loader=testdouble --loader=ts-node/esm" npm run test
 ```
