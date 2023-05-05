@@ -16,5 +16,5 @@ test('some test', async t => {
   
   const res = logStuff(await concat('some', 'stuff'))
 
-  t.is(res, 'some not stuff 22')
+  t.is(res, 'some not stuff 22') //should fail if the mock is working
 })
