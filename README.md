@@ -9,4 +9,7 @@ To run tests:
 ```
 yarn install
 NODE_OPTIONS="--loader=ts-node/esm --loader=testdouble" npm run test
+
+//or rely on ava config in package.json and:
+yarn test
 ```
