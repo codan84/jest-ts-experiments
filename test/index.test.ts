@@ -7,7 +7,7 @@ let concat: (a: string, b: string) => Promise<string>
 let iWantToBeMocked: () => number
 
 test.before(async t => {
-  iWantToBeMocked = (await td.replaceEsm('../src/want-to-be-mocked.js')).iWantToBeMocked
+  iWantToBeMocked = (await td.replaceEsm('../src/want-to-be-mocked.ts')).iWantToBeMocked
   concat = (await import('../src/index.js')).concat
 })
 
