@@ -16,14 +16,5 @@
   },
   "dependencies": {
     "image-type": "^5.2.0"
-  },
-  "ava": {
-    "extensions": {
-      "ts": "module"
-    },
-    "nodeArguments": [
-      "--loader=ts-node/esm",
-      "--loader=testdouble"
-    ]
   }
 }
